@@ -12,7 +12,8 @@ BEGIN
 END
 
 GO
-CREATE PROCEDURE usp_InsertArtits
+
+CREATE PROCEDURE usp_InsertArtist
 (
 @Name NVARCHAR(120)
 )
@@ -26,3 +27,34 @@ BEGIN
 
 END
 
+go
+
+CREATE PROCEDURE usp_InsertArtistWithOutput
+(
+@Name NVARCHAR(120),
+@ID INT OUTPUT
+)
+AS
+BEGIN
+	
+	INSERT INTO Artist(Name)
+	VALUES(@Name)
+
+	SET @ID = SCOPE_IDENTITY()
+
+END
+
+CREATE PROCEDURE usp_UpdateArtist
+(
+@Name NVARCHAR(120),
+@ID INT
+)
+AS
+BEGIN
+	
+	UPDATE Artist
+	SET [Name] = @Name
+	WHERE ArtistId = @ID
+
+
+END
