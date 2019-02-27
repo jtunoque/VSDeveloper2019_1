@@ -12,3 +12,5 @@ C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst\obj\Debug\App.EF.Code
 C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst\obj\Debug\App.EF.CodeFirst.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst\obj\Debug\App.EF.CodeFirst.dll
 C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst\obj\Debug\App.EF.CodeFirst.pdb
+C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst\bin\Debug\App.EF.Entities.Query.dll
+C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst\bin\Debug\App.EF.Entities.Query.pdb

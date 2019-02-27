@@ -25,3 +25,5 @@ C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst.Test\obj\Debug\App.EF
 C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst.Test\bin\Debug\App.EF.CodeFirst.Test.dll.config
 C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst.Test\bin\Debug\EntityFramework.SqlServer.dll
 C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst.Test\bin\Debug\App.EF.Entities.Query.dll
+C:\vsdeveloper2017\LabGitHub\Cap04\slnApp\App.EF.CodeFirst.Test\bin\Debug\App.EF.Entities.Query.pdb
