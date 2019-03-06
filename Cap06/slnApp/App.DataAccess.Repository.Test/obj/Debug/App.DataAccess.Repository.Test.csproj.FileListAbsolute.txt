@@ -27,3 +27,5 @@ C:\vsdeveloper2017\LabGitHub\Cap06\slnApp\App.DataAccess.Repository.Test\obj\Deb
 C:\vsdeveloper2017\LabGitHub\Cap06\slnApp\App.DataAccess.Repository.Test\obj\Debug\App.DataAccess.Repository.Test.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap06\slnApp\App.DataAccess.Repository.Test\obj\Debug\App.DataAccess.Repository.Test.dll
 C:\vsdeveloper2017\LabGitHub\Cap06\slnApp\App.DataAccess.Repository.Test\obj\Debug\App.DataAccess.Repository.Test.pdb
+C:\vsdeveloper2017\LabGitHub\Cap06\slnApp\App.DataAccess.Repository.Test\bin\Debug\App.Entities.Queries.dll
+C:\vsdeveloper2017\LabGitHub\Cap06\slnApp\App.DataAccess.Repository.Test\bin\Debug\App.Entities.Queries.pdb

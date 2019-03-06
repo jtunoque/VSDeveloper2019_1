@@ -41,6 +41,7 @@ namespace App.EF.CodeFirst
                 .Where(item=>item.ArtistId==id).FirstOrDefault();
         }
 
+
         public int Insert(Artist entity)
         {
             //Se agrega la entidad al contexto de Entity Framework

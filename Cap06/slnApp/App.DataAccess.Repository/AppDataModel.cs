@@ -11,6 +11,17 @@ namespace App.DataAccess.Repository
         public AppDataModel()
             : base("name=cnxAppDataModel")
         {
+            Database.SetInitializer<AppDataModel>(null);
+
+            //Deshabilitando la carga pesada (información
+            //relacionada)            
+            this.Configuration.LazyLoadingEnabled = false;
+
+            this.Configuration.ProxyCreationEnabled = false;
+
+            this.Configuration.AutoDetectChangesEnabled = false;
+
+            this.Configuration.ValidateOnSaveEnabled = false;
         }
 
         public virtual DbSet<Album> Album { get; set; }

@@ -9,6 +9,6 @@ namespace App.DataAccess.Repository.Interface
 {
     public interface IArtistRepository:IGenericRepository<Artist>
     {        
-
+        
     }
 }
