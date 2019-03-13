@@ -9,7 +9,7 @@ namespace App.Domain.Interfaces
 {
     public interface IArtistDomain
     {
-        IEnumerable<Artist> GetArtists();        
+        IEnumerable<Artist> GetArtists(string nombre);        
 
     }
 }

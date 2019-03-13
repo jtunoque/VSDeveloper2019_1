@@ -15,10 +15,10 @@ namespace App.Services.WCF
     public partial class MantenimientosServices : 
         IMantenimientosServices
     {
-        public IEnumerable<Artist> GetArtistAll()
+        public IEnumerable<Artist> GetArtistAll(string nombre)
         {
             IArtistDomain domain = new ArtistDomain();
-            return domain.GetArtists();
+            return domain.GetArtists(nombre);
         }
     }
 }
