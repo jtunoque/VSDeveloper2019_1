@@ -1,5 +1,3 @@
-C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.csprojAssemblyReference.cache
-C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.csproj.CoreCompileInputs.cache
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\App.Domain.dll
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\App.Domain.pdb
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\App.DataAccess.Repository.dll
@@ -15,6 +13,8 @@ C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\App.Domain.Interf
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\App.Entities.Base.pdb
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\App.Entities.Queries.pdb
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\bin\Debug\EntityFramework.xml
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.csprojAssemblyReference.cache
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.csproj.CoreCompileInputs.cache
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.dll
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Domain\obj\Debug\App.Domain.pdb
