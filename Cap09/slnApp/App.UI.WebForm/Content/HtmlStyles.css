@@ -1,0 +1,31 @@
+﻿div {
+    height: 250px;
+    width: 400px;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-image: url('images/paisaje.jpg');
+    background-size:cover;
+    color:#e6f2f7;
+}
+
+.article {
+    height:200px;
+    border: 1px solid red;
+    background-color:#516eb1;
+    background-image:none;
+    color:#e6f2f7
+}
+
+#listadoId
+{
+    margin-top:20px;
+}
+
+#listadoId table,th,td{
+    border-color: brown;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+}

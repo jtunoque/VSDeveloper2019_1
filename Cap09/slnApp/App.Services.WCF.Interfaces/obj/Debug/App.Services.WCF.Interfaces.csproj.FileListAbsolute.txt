@@ -1,0 +1,11 @@
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\bin\Debug\App.Services.WCF.Interfaces.dll
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\bin\Debug\App.Services.WCF.Interfaces.pdb
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\bin\Debug\App.Entities.Base.dll
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\bin\Debug\App.Entities.Queries.dll
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\bin\Debug\App.Entities.Base.pdb
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\bin\Debug\App.Entities.Queries.pdb
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\obj\Debug\App.Services.WCF.Interfaces.csprojAssemblyReference.cache
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\obj\Debug\App.Services.WCF.Interfaces.csproj.CoreCompileInputs.cache
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\obj\Debug\App.Services.WCF.Interfaces.csproj.CopyComplete
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\obj\Debug\App.Services.WCF.Interfaces.dll
+C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Services.WCF.Interfaces\obj\Debug\App.Services.WCF.Interfaces.pdb
