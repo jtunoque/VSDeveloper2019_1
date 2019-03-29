@@ -16,3 +16,5 @@ C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Service.WCFAppTest\obj\Debug\App.S
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Service.WCFAppTest\obj\Debug\App.Service.WCFAppTest.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Service.WCFAppTest\obj\Debug\App.Service.WCFAppTest.dll
 C:\vsdeveloper2017\LabGitHub\Cap07\slnApp\App.Service.WCFAppTest\obj\Debug\App.Service.WCFAppTest.pdb
+C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.Service.WCFAppTest\obj\Debug\App.Service.WCFAppTest.dll
+C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.Service.WCFAppTest\obj\Debug\App.Service.WCFAppTest.pdb

@@ -75,3 +75,7 @@ C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\obj\Debug\App.UI.WebFor
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\obj\Debug\App.UI.WebForm.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\obj\Debug\App.UI.WebForm.dll
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\obj\Debug\App.UI.WebForm.pdb
+C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\bin\App.Entities.Base.dll
+C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\bin\App.Entities.Queries.dll
+C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\bin\App.Entities.Base.pdb
+C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.UI.WebForm\bin\App.Entities.Queries.pdb
