@@ -27,5 +27,10 @@ namespace App.UI.WebForm.Mantenimientos
             gvListado.DataBind();
 
         }
+
+        protected void btnNuevo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NewArtist.aspx");
+        }
     }
 }

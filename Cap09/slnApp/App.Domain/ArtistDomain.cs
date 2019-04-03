@@ -12,6 +12,18 @@ namespace App.Domain
 {
     public class ArtistDomain : IArtistDomain
     {
+        public Artist Get(int id)
+        {
+            Artist result = new Artist();
+
+            using (var uw = new AppUnitOfWork())
+            {
+                result = uw.ArtistRepository.GetById<int>(id);
+            }
+
+            return result;
+        }
+
         public IEnumerable<Artist> GetArtists(string nombre)
         {
             IEnumerable<Artist> result = new List<Artist>();
@@ -33,6 +45,35 @@ namespace App.Domain
             using (var uw = new AppUnitOfWork())
             {
                 result = uw.TrackRepository.GetTracksAll(nombre);
+            }
+
+            return result;
+        }
+
+        public bool SaveArtist(Artist entity)
+        {
+            var result = false;
+
+            try
+            {
+                using (var uw = new AppUnitOfWork())
+                {
+                    /*Editando el artista*/
+                    if (entity.ArtistId > 0) {
+                        uw.ArtistRepository.Update(entity);
+                    }
+                    else //Cuando es nuevo artista
+                    {
+                        uw.ArtistRepository.Add(entity);
+                    }
+
+                    result = uw.Complete()>0;
+                }
+           
+            }
+            catch(Exception ex)
+            {
+                //Agregar el exeption aun log de errores
             }
 
             return result;

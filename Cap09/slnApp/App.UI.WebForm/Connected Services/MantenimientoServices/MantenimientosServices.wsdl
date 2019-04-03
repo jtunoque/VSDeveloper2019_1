@@ -42,10 +42,30 @@
   <wsdl:message name="IMantenimientosServices_GetArtistAll_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetArtistAllResponse" />
   </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_SaveArtist_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveArtist" />
+  </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_SaveArtist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveArtistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_GetArtist_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtist" />
+  </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_GetArtist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtistResponse" />
+  </wsdl:message>
   <wsdl:portType name="IMantenimientosServices">
     <wsdl:operation name="GetArtistAll">
       <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtistAll" message="tns:IMantenimientosServices_GetArtistAll_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtistAllResponse" message="tns:IMantenimientosServices_GetArtistAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveArtist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/SaveArtist" message="tns:IMantenimientosServices_SaveArtist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/SaveArtistResponse" message="tns:IMantenimientosServices_SaveArtist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArtist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtist" message="tns:IMantenimientosServices_GetArtist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtistResponse" message="tns:IMantenimientosServices_GetArtist_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IMantenimientosServices" type="tns:IMantenimientosServices">
@@ -60,11 +80,47 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="SaveArtist">
+      <soap12:operation soapAction="http://tempuri.org/IMantenimientosServices/SaveArtist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtist">
+      <soap12:operation soapAction="http://tempuri.org/IMantenimientosServices/GetArtist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="BasicHttpBinding_IMantenimientosServices" type="tns:IMantenimientosServices">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetArtistAll">
       <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/GetArtistAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveArtist">
+      <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/SaveArtist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtist">
+      <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/GetArtist" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

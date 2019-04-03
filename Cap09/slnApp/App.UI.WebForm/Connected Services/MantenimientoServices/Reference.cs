@@ -20,6 +20,18 @@ namespace App.UI.WebForm.MantenimientoServices {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetArtistAll", ReplyAction="http://tempuri.org/IMantenimientosServices/GetArtistAllResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<App.Entities.Base.Artist>> GetArtistAllAsync(string nombre);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/SaveArtist", ReplyAction="http://tempuri.org/IMantenimientosServices/SaveArtistResponse")]
+        bool SaveArtist(App.Entities.Base.Artist entity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/SaveArtist", ReplyAction="http://tempuri.org/IMantenimientosServices/SaveArtistResponse")]
+        System.Threading.Tasks.Task<bool> SaveArtistAsync(App.Entities.Base.Artist entity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetArtist", ReplyAction="http://tempuri.org/IMantenimientosServices/GetArtistResponse")]
+        App.Entities.Base.Artist GetArtist(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetArtist", ReplyAction="http://tempuri.org/IMantenimientosServices/GetArtistResponse")]
+        System.Threading.Tasks.Task<App.Entities.Base.Artist> GetArtistAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +67,22 @@ namespace App.UI.WebForm.MantenimientoServices {
         
         public System.Threading.Tasks.Task<System.Collections.Generic.List<App.Entities.Base.Artist>> GetArtistAllAsync(string nombre) {
             return base.Channel.GetArtistAllAsync(nombre);
+        }
+        
+        public bool SaveArtist(App.Entities.Base.Artist entity) {
+            return base.Channel.SaveArtist(entity);
+        }
+        
+        public System.Threading.Tasks.Task<bool> SaveArtistAsync(App.Entities.Base.Artist entity) {
+            return base.Channel.SaveArtistAsync(entity);
+        }
+        
+        public App.Entities.Base.Artist GetArtist(int id) {
+            return base.Channel.GetArtist(id);
+        }
+        
+        public System.Threading.Tasks.Task<App.Entities.Base.Artist> GetArtistAsync(int id) {
+            return base.Channel.GetArtistAsync(id);
         }
     }
 }

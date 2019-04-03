@@ -139,6 +139,7 @@
     <Content Include="html\HtmlDemoStylesbootstrapForm.html" />
     <Content Include="html\HtmlDemoStylesbootstrap.html" />
     <Content Include="Mantenimientos\ManageArtist.aspx" />
+    <Content Include="Mantenimientos\NewArtist.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -172,6 +173,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Properties\DataSources\App.Entities.Base.Artist.datasource" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="html\HtmlDemoStyles.html" />
     <Content Include="html\HtmlDemo.html" />
@@ -262,6 +264,13 @@
     </Compile>
     <Compile Include="Mantenimientos\ManageArtist.aspx.designer.cs">
       <DependentUpon>ManageArtist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\NewArtist.aspx.cs">
+      <DependentUpon>NewArtist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\NewArtist.aspx.designer.cs">
+      <DependentUpon>NewArtist.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
