@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Artistas";
+}
+
+<h2>Lista de artistas</h2>
+
+<ul>
+    @foreach (var item in ViewBag.ArtistList)
+    {
+    <li>@item</li>
+    }
+</ul>
+

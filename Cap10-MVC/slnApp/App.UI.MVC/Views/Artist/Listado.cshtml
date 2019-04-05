@@ -1,0 +1,28 @@
+﻿@model IEnumerable<App.Entities.Base.Artist>
+
+@{
+    ViewBag.Title = "Listado";
+}
+
+
+<h2>Listado</h2>
+<form>
+    <input class="form-control" name="filtroByNombre" />
+    <button type="submit">Buscar</button>
+</form>
+
+<table class="table">
+    <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.ArtistId</td>
+        <td>@item.Name</td>
+    </tr>
+    }
+
+</table>
+
