@@ -1,26 +1,34 @@
 ﻿@model IEnumerable<App.Entities.Base.Artist>
 
 @{
-    ViewBag.Title = "Listado";
-}
-
-
-<h2>Listado</h2>
+    ViewBag.Title = "Administración de Artistas";
+    ViewBag.ViewDescription = "Página que permita la gestión de la" +
+                " información de artistas";
+}   
 <form>
-    <input class="form-control" name="filtroByNombre" />
-    <button type="submit">Buscar</button>
+    <input class="form-control" name="filtroByNombre" placeholder="Búsqueda por nombre de artista" />
+    <br />
+    <button type="submit" class="btn btn-success">Buscar</button>
+    
+    <a href="@Url.Action("Create")" class="btn btn-primary">Nuevo artista</a>
+    <br />
 </form>
-
+<br />
 <table class="table">
     <tr>
         <th>Código</th>
         <th>Nombre</th>
+        <th>Acción</th>
     </tr>
     @foreach (var item in Model)
     {
     <tr>
         <td>@item.ArtistId</td>
         <td>@item.Name</td>
+        <td>
+            <a href="@Url.Action("Edit", new {id=item.ArtistId })"><i class="glyphicon glyphicon-pencil fa-1x"></i></a>
+
+        </td>
     </tr>
     }
 
