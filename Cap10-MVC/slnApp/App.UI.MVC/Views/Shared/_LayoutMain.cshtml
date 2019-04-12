@@ -16,6 +16,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
+    
+
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -30,7 +32,9 @@
             <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;">Last access : 30 May 2014 &nbsp;<a href="#" class="btn btn-danger square-btn-adjust">Logout</a></div>
+font-size: 16px;">
+                
+            Last access : 30 May 2014 &nbsp;<a href="#" class="btn btn-danger square-btn-adjust">Logout</a></div>
         </nav>
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
@@ -45,7 +49,7 @@ font-size: 16px;">Last access : 30 May 2014 &nbsp;<a href="#" class="btn btn-dan
                         <a class="active-menu" href="@Url.Action("Listado","Artist")"><i class="fa fa-dashboard fa-3x"></i> Artistas</a>
                     </li>
                     <li>
-                        <a href="ui.html"><i class="fa fa-desktop fa-3x"></i> UI Elements</a>
+                        <a href="@Url.Action("Index","Track")"><i class="fa fa-desktop fa-3x"></i>Reporte de Tracks</a>
                     </li>
                     <li>
                         <a href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i> Tabs & Panels</a>
@@ -100,9 +104,13 @@ font-size: 16px;">Last access : 30 May 2014 &nbsp;<a href="#" class="btn btn-dan
         <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-9">
                         <h2>@ViewBag.Title</h2>
                         <h5>@ViewBag.ViewDescription</h5>
+                    </div>
+
+                    <div id="imgLoader" style="display:none; right:7px;" class="col-md-3">
+                        <img src="~/Content/template/img/loading.gif" />
                     </div>
                 </div>
                 <!-- /. ROW  -->
@@ -129,6 +137,8 @@ font-size: 16px;">Last access : 30 May 2014 &nbsp;<a href="#" class="btn btn-dan
     <script src="~/Content/template/js/morris/morris.js"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="~/Content/template/js/custom.js"></script>
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
 
 </body>
 </html>

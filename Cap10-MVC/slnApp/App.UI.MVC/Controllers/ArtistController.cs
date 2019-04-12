@@ -41,6 +41,14 @@ namespace App.UI.MVC.Controllers
             return View(listado);
         }
 
+        public ActionResult Buscar(string filtroByNombre)
+        {
+            var listado = wcfClient.GetArtistAll(filtroByNombre);
+            System.Threading.Thread.Sleep(1000);
+            //Vistas fuertemente tipadas o strong-types
+            return PartialView("ListadoResultado", listado);
+        }
+
         public ActionResult Edit(int id)
         {
             var artist = wcfClient.GetArtist(id);
