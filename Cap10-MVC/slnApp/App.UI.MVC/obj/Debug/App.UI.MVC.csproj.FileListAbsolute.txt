@@ -89,3 +89,12 @@ C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\App.Entities.Base.d
 C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\App.Entities.Queries.dll
 C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\App.Entities.Base.pdb
 C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\App.Entities.Queries.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.Security.Cookies.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.Security.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Owin.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.xml
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.Security.xml
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.UI.MVC\bin\Microsoft.Owin.Security.Cookies.xml

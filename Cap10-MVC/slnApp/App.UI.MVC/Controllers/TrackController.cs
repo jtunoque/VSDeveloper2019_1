@@ -7,6 +7,7 @@ using App.Entities.Queries;
 
 namespace App.UI.MVC.Controllers
 {
+    [Authorize]
     public class TrackController : Controller
     {
         ReportesServices.ReporteServicesClient reporteServicesClient=null;
