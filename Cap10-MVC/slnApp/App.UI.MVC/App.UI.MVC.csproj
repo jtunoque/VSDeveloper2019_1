@@ -153,6 +153,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\SeguridadServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ArtistController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
@@ -176,6 +181,13 @@
     <None Include="Connected Services\ReportesServices\configuration91.svcinfo" />
     <None Include="Connected Services\ReportesServices\configuration.svcinfo" />
     <None Include="Connected Services\ReportesServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\SeguridadServices\SeguridadServices.disco" />
+    <None Include="Connected Services\SeguridadServices\configuration91.svcinfo" />
+    <None Include="Connected Services\SeguridadServices\configuration.svcinfo" />
+    <None Include="Connected Services\SeguridadServices\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -243,6 +255,17 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Properties\DataSources\App.Entities.Queries.TrackAll.datasource" />
+    <None Include="Connected Services\SeguridadServices\SeguridadServices.wsdl" />
+    <None Include="Connected Services\SeguridadServices\SeguridadServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SeguridadServices\SeguridadServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SeguridadServices\SeguridadServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Properties\DataSources\App.Entities.Base.Usuario.datasource" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -311,6 +334,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\MantenimientosServices\" />
     <WCFMetadataStorage Include="Connected Services\ReportesServices\" />
+    <WCFMetadataStorage Include="Connected Services\SeguridadServices\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

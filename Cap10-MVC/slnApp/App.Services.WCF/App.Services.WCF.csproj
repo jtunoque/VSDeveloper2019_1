@@ -60,6 +60,8 @@
     <Compile Include="Mantenimientos\MantenimientosServices.cs" />
     <Compile Include="Reportes\Implements\ReporteTracks.cs" />
     <Compile Include="Reportes\ReporteServices.cs" />
+    <Compile Include="Seguridad\Implements\SeguridadServices.cs" />
+    <Compile Include="Seguridad\SeguridadServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

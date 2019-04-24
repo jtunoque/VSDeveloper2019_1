@@ -20,3 +20,14 @@ C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.Services.WCF.Interfaces\obj\Releas
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.dll
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\bin\Release\App.Services.WCF.Interfaces.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\bin\Release\App.Services.WCF.Interfaces.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\bin\Release\App.Entities.Base.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\bin\Release\App.Entities.Queries.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\bin\Release\App.Entities.Base.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\bin\Release\App.Entities.Queries.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.csprojAssemblyReference.cache
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.csproj.CoreCompileInputs.cache
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.csproj.CopyComplete
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.Services.WCF.Interfaces\obj\Release\App.Services.WCF.Interfaces.pdb

@@ -20,3 +20,14 @@ C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.DataAccess.Repository.Interface\ob
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.csproj.CopyComplete
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.dll
 C:\vsdeveloper2017\LabGitHub\Cap09\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\bin\Release\App.DataAccess.Repository.Interface.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\bin\Release\App.DataAccess.Repository.Interface.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\bin\Release\App.Entities.Base.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\bin\Release\App.Entities.Queries.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\bin\Release\App.Entities.Base.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\bin\Release\App.Entities.Queries.pdb
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.csprojAssemblyReference.cache
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.csproj.CoreCompileInputs.cache
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.csproj.CopyComplete
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.dll
+C:\vsdeveloper2017\LabGitHub\Cap10-MVC\slnApp\App.DataAccess.Repository.Interface\obj\Release\App.DataAccess.Repository.Interface.pdb

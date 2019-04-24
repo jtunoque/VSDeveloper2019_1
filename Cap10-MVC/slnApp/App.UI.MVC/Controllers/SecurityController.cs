@@ -22,21 +22,39 @@ namespace App.UI.MVC.Controllers
                     string clave, string returnUrl)
         {
             //Validar en base de datos
+            var seguridadClient = new SeguridadServices.SeguridadServicesClient();
+            var usuarioFound = seguridadClient.ValidarAcceso(usuario, clave);
 
-            var claims = new List<Claim>();
-            //Agregando los claims que se van 
-            //a necesitar en la aplicación
-            claims.Add(new Claim(ClaimTypes.Name, "Javier Tunoque"));
-            claims.Add(new Claim("UsuarioID", "1"));
+            if (usuarioFound == null) //Si el usuario no existe se queda en Login
+            {
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                var claims = new List<Claim>();
+                //Agregando los claims que se van 
+                //a necesitar en la aplicación
+                claims.Add(
+                    new Claim(ClaimTypes.Name, $"{usuarioFound.Nombres} {usuarioFound.Apellidos}"));
 
-            var identity = new ClaimsIdentity(claims, "ApplicationCookie");
-            //Llama a los componentes de Owin para iniciar el proceso
-            //de generación de la cookie de autenticación
-            var context = Request.GetOwinContext();
-            var authManager = context.Authentication;
-            authManager.SignIn(identity); //Crea la cookie
+                claims.Add(new Claim("UsuarioID", $"{usuarioFound.UsuarioId}"));
 
-            return Redirect(returnUrl ?? "~/");
+                var identity = new ClaimsIdentity(claims, "ApplicationCookie");
+                //Llama a los componentes de Owin para iniciar el proceso
+                //de generación de la cookie de autenticación
+                var context = Request.GetOwinContext();
+                var authManager = context.Authentication;
+                authManager.SignIn(identity); //Crea la cookie
+
+                return Redirect(returnUrl ?? "~/");
+            }
+        }
+
+        public ActionResult SignOut()
+        {
+            Request.GetOwinContext().Authentication.SignOut();
+
+            return RedirectToAction("Login");
         }
     }
 }

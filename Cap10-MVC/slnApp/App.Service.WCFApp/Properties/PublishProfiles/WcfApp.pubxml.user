@@ -10,64 +10,64 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/App.DataAccess.Repository.dll">
-      <publishTime>04/02/2019 19:59:53</publishTime>
+      <publishTime>04/23/2019 22:11:23</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.dll.config">
       <publishTime>02/28/2019 19:35:56</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.Interface.dll">
-      <publishTime>04/02/2019 19:59:53</publishTime>
+      <publishTime>04/23/2019 21:38:50</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.Interface.pdb">
-      <publishTime>04/02/2019 19:59:53</publishTime>
+      <publishTime>04/23/2019 21:38:50</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.pdb">
-      <publishTime>04/02/2019 19:59:53</publishTime>
+      <publishTime>04/23/2019 22:11:23</publishTime>
     </File>
     <File Include="bin/App.Domain.dll">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 22:11:23</publishTime>
     </File>
     <File Include="bin/App.Domain.Interfaces.dll">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 22:11:23</publishTime>
     </File>
     <File Include="bin/App.Domain.Interfaces.pdb">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 22:11:23</publishTime>
     </File>
     <File Include="bin/App.Domain.pdb">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 22:11:23</publishTime>
     </File>
     <File Include="bin/App.Entities.Base.dll">
-      <publishTime>04/02/2019 19:59:52</publishTime>
+      <publishTime>04/23/2019 21:38:50</publishTime>
     </File>
     <File Include="bin/App.Entities.Base.pdb">
-      <publishTime>04/02/2019 19:59:52</publishTime>
+      <publishTime>04/23/2019 21:38:50</publishTime>
     </File>
     <File Include="bin/App.Entities.Queries.dll">
-      <publishTime>04/02/2019 19:59:52</publishTime>
+      <publishTime>04/23/2019 21:38:50</publishTime>
     </File>
     <File Include="bin/App.Entities.Queries.pdb">
-      <publishTime>04/02/2019 19:59:52</publishTime>
+      <publishTime>04/23/2019 21:38:50</publishTime>
     </File>
     <File Include="bin/App.Service.WCFApp.dll">
-      <publishTime>04/02/2019 21:43:15</publishTime>
+      <publishTime>04/23/2019 22:11:25</publishTime>
     </File>
     <File Include="bin/App.Service.WCFApp.pdb">
-      <publishTime>04/02/2019 21:43:15</publishTime>
+      <publishTime>04/23/2019 22:11:25</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.dll">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 22:11:24</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.dll.config">
       <publishTime>03/07/2019 21:08:25</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.Interfaces.dll">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 21:40:07</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.Interfaces.pdb">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 21:40:07</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.pdb">
-      <publishTime>04/02/2019 21:43:13</publishTime>
+      <publishTime>04/23/2019 22:11:24</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/07/2018 11:03:48</publishTime>
@@ -81,8 +81,11 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
     <File Include="ReportesServices.svc">
       <publishTime>03/12/2019 21:47:30</publishTime>
     </File>
+    <File Include="SeguridadServices.svc">
+      <publishTime>04/23/2019 21:28:45</publishTime>
+    </File>
     <File Include="Web.config">
-      <publishTime>04/02/2019 19:59:55</publishTime>
+      <publishTime>04/23/2019 21:38:53</publishTime>
     </File>
   </ItemGroup>
 </Project>
