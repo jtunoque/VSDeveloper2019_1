@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Reporte de Tracks";
+    ViewBag.ViewDescription = "Página con la información completa de tracks";
+}
+@using (Ajax.BeginForm("Buscar",
+        new AjaxOptions
+        {
+            HttpMethod = "POST",
+            UpdateTargetId = "resultadoId",
+            InsertionMode = InsertionMode.Replace,
+            LoadingElementId = "imgLoader"
+        }
+    ))
+{
+    <input class="form-control" name="filtroByNombre" placeholder="Búsqueda por nombre de track" />
+    <br />
+    <button type="submit" class="btn btn-success">Buscar</button>
+}
+<br />
+<div id="resultadoId"></div>
+

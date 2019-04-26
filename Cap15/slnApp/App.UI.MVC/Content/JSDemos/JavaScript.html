@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <button type="button" onclick="MostrarTotal()">Click Aqui</button>
+
+    <button type="button" onclick="Agregar()">Agregar</button>
+
+    <script type="text/javascript">
+        //debugger:palabra clave en javascript que permite
+        //depurar el código
+        //debugger;
+        //Ejemplo de creación de objetos en javascript
+        var carrito = [];
+        var producto = {};
+        producto.id = 1;
+        producto.nombre = "Impresora Laser";
+        producto.precio = 20.5;
+        producto.stock = 100;
+        producto.cantidad = 3;
+        /* producto.subtotal = CalcularSubTotal(producto.precio,
+             producto.cantidad);*/
+        producto.CalcularSubTotal = function () {
+            var total = this.precio * this.cantidad;
+            return total;
+        };
+
+        var total = producto.CalcularSubTotal();
+
+
+        function CalcularSubTotal(precio, cantidad) {
+            var total = precio * cantidad;
+
+            return total;
+        }
+
+        function MostrarTotal() {
+            alert("El monto total es: " + total);
+        }
+
+        function Agregar() {
+            carrito.push(producto); //El método push agrega elementos al arreglo
+
+            alert("Cantidad de registros: " + carrito.length);
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

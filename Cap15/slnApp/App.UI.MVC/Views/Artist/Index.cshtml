@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Administración de Artistas";
+    ViewBag.ViewDescription = "Página que permita la gestión de la" +
+                "información de artistas";
+}
+
+<h2>Lista de artistas</h2>
+
+<ul>
+    @foreach (var item in ViewBag.ArtistList)
+    {
+    <li>@item</li>
+    }
+</ul>
+
