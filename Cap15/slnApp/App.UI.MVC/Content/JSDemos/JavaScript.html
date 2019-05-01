@@ -10,6 +10,21 @@
 
     <button type="button" onclick="Agregar()">Agregar</button>
 
+    <button type="button" onclick="Remover()">Remover</button>
+
+    <br />
+    <br />
+
+    <input onkeypress="onKeyPressFunction(event)"
+           placeholder="Presione la tecla ENTER" />
+
+    <br />
+    <br />
+
+    <input onkeyup="onKeyUpFunction(event)"
+           placeholder="Presione la tecla Ctrl+v" />
+
+
     <script type="text/javascript">
         //debugger:palabra clave en javascript que permite
         //depurar el código
@@ -46,12 +61,37 @@
             carrito.push(producto); //El método push agrega elementos al arreglo
 
             alert("Cantidad de registros: " + carrito.length);
+
+            for (i = 0; i < carrito.length; i++) {
+                alert(carrito[i].nombre);
+            }
+
+
+        }
+
+        function Remover() {
+            //Removiendo elementos en javacript
+            carrito.splice(0, 1);
         }
 
 
 
     </script>
 
+    <script>
+        function onKeyPressFunction(e) {
+            if (e.keyCode == 13 || e.which == 13) {
+                alert("Presionó la tecla ENTER");
+            }
+        }
+
+        function onKeyUpFunction(e) {
+            if (e.ctrlKey && e.keyCode==86) {
+                alert("Presionón las teclas Ctrl+v");
+            }
+        }
+
+    </script>
 
 </body>
 </html>

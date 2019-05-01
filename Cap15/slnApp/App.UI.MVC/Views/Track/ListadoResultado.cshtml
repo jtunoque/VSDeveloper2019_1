@@ -1,31 +1,35 @@
 ﻿@model IEnumerable<App.Entities.Queries.TrackAll>
 
 <table class="table">
-    <tr>
-        <th>Código</th>
-        <th>Pista</th>
-        <th>Artista</th>
-        <th>Compositor</th>
-        <th>Título</th>
-        <th>Medio</th>
-        <th>Género</th>
-        <th>Precio</th>
-        <th>Milisegundos</th>
-        <th>bytes</th>
-    </tr>
-    @foreach (var item in Model)
-    {
+    <thead>
         <tr>
-            <td>@item.TrackId</td>
-            <td>@item.TrackName</td>
-            <td>@item.ArtistName</td>
-            <td>@item.Composer</td>
-            <td>@item.Title</td>
-            <td>@item.MediaTypeName</td>
-            <td>@item.GenreName</td>
-            <td>@item.UnitPrice</td>
-            <td>@item.Milliseconds</td>
-            <td>@item.Bytes</td>
+            <th>Código</th>
+            <th>Pista</th>
+            <th>Artista</th>
+            <th>Compositor</th>
+            <th>Título</th>
+            <th>Medio</th>
+            <th>Género</th>
+            <th>Precio</th>
+            <th>Milisegundos</th>
+            <th>bytes</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.TrackId</td>
+                <td>@item.TrackName</td>
+                <td>@item.ArtistName</td>
+                <td>@item.Composer</td>
+                <td>@item.Title</td>
+                <td>@item.MediaTypeName</td>
+                <td>@item.GenreName</td>
+                <td>@item.UnitPrice</td>
+                <td>@item.Milliseconds</td>
+                <td>@item.Bytes</td>
+            </tr>
+        }
+    </tbody>
 </table>
