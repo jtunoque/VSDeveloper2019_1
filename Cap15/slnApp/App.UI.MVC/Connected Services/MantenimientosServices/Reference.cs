@@ -15,6 +15,12 @@ namespace App.UI.MVC.MantenimientosServices {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MantenimientosServices.IMantenimientosServices")]
     public interface IMantenimientosServices {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetCustomers", ReplyAction="http://tempuri.org/IMantenimientosServices/GetCustomersResponse")]
+        System.Collections.Generic.List<App.Entities.Base.Customer> GetCustomers(string nombre);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetCustomers", ReplyAction="http://tempuri.org/IMantenimientosServices/GetCustomersResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<App.Entities.Base.Customer>> GetCustomersAsync(string nombre);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetArtistAll", ReplyAction="http://tempuri.org/IMantenimientosServices/GetArtistAllResponse")]
         System.Collections.Generic.List<App.Entities.Base.Artist> GetArtistAll(string nombre);
         
@@ -59,6 +65,14 @@ namespace App.UI.MVC.MantenimientosServices {
         
         public MantenimientosServicesClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public System.Collections.Generic.List<App.Entities.Base.Customer> GetCustomers(string nombre) {
+            return base.Channel.GetCustomers(nombre);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<App.Entities.Base.Customer>> GetCustomersAsync(string nombre) {
+            return base.Channel.GetCustomersAsync(nombre);
         }
         
         public System.Collections.Generic.List<App.Entities.Base.Artist> GetArtistAll(string nombre) {

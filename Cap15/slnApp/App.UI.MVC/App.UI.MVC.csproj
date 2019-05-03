@@ -270,6 +270,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Properties\DataSources\App.Entities.Base.Usuario.datasource" />
+    <Content Include="Properties\DataSources\App.Entities.Base.Customer.datasource" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -305,6 +306,7 @@
     <Content Include="Views\Track\ListadoResultado.cshtml" />
     <Content Include="Views\Security\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutAll.cshtml" />
+    <Content Include="Views\Track\VenderTrack.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

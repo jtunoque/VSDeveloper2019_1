@@ -24,7 +24,7 @@ namespace App.UI.MVC
                 {
                     AuthenticationType="ApplicationCookie",
                     CookieName="AuthAppChinook",
-                    ExpireTimeSpan=TimeSpan.FromSeconds(240),
+                    ExpireTimeSpan=TimeSpan.FromDays(60),
                     LoginPath=new PathString("/Security/Login")
                 }                
             );

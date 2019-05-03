@@ -36,6 +36,12 @@
       <xsd:import schemaLocation="http://localhost:5051/MantenimientosServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/App.Entities.Base" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IMantenimientosServices_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
   <wsdl:message name="IMantenimientosServices_GetArtistAll_InputMessage">
     <wsdl:part name="parameters" element="tns:GetArtistAll" />
   </wsdl:message>
@@ -55,6 +61,10 @@
     <wsdl:part name="parameters" element="tns:GetArtistResponse" />
   </wsdl:message>
   <wsdl:portType name="IMantenimientosServices">
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/GetCustomers" message="tns:IMantenimientosServices_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/GetCustomersResponse" message="tns:IMantenimientosServices_GetCustomers_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetArtistAll">
       <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtistAll" message="tns:IMantenimientosServices_GetArtistAll_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtistAllResponse" message="tns:IMantenimientosServices_GetArtistAll_OutputMessage" />
@@ -71,6 +81,15 @@
   <wsdl:binding name="NetTcpBinding_IMantenimientosServices" type="tns:IMantenimientosServices">
     <wsp:PolicyReference URI="#NetTcpBinding_IMantenimientosServices_policy" />
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetCustomers">
+      <soap12:operation soapAction="http://tempuri.org/IMantenimientosServices/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetArtistAll">
       <soap12:operation soapAction="http://tempuri.org/IMantenimientosServices/GetArtistAll" style="document" />
       <wsdl:input>
@@ -101,6 +120,15 @@
   </wsdl:binding>
   <wsdl:binding name="BasicHttpBinding_IMantenimientosServices" type="tns:IMantenimientosServices">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomers">
+      <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetArtistAll">
       <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/GetArtistAll" style="document" />
       <wsdl:input>

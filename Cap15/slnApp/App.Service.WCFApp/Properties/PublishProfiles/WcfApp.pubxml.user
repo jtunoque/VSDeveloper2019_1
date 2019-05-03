@@ -10,64 +10,64 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/App.DataAccess.Repository.dll">
-      <publishTime>04/23/2019 22:11:23</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.dll.config">
       <publishTime>02/28/2019 19:35:56</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.Interface.dll">
-      <publishTime>04/23/2019 21:38:50</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.Interface.pdb">
-      <publishTime>04/23/2019 21:38:50</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.pdb">
-      <publishTime>04/23/2019 22:11:23</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Domain.dll">
-      <publishTime>04/23/2019 22:11:23</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Domain.Interfaces.dll">
-      <publishTime>04/23/2019 22:11:23</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Domain.Interfaces.pdb">
-      <publishTime>04/23/2019 22:11:23</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Domain.pdb">
-      <publishTime>04/23/2019 22:11:23</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Entities.Base.dll">
-      <publishTime>04/23/2019 21:38:50</publishTime>
+      <publishTime>05/02/2019 21:38:32</publishTime>
     </File>
     <File Include="bin/App.Entities.Base.pdb">
-      <publishTime>04/23/2019 21:38:50</publishTime>
+      <publishTime>05/02/2019 21:38:32</publishTime>
     </File>
     <File Include="bin/App.Entities.Queries.dll">
-      <publishTime>04/23/2019 21:38:50</publishTime>
+      <publishTime>05/02/2019 21:38:32</publishTime>
     </File>
     <File Include="bin/App.Entities.Queries.pdb">
-      <publishTime>04/23/2019 21:38:50</publishTime>
+      <publishTime>05/02/2019 21:38:32</publishTime>
     </File>
     <File Include="bin/App.Service.WCFApp.dll">
-      <publishTime>04/23/2019 22:11:25</publishTime>
+      <publishTime>05/02/2019 21:38:35</publishTime>
     </File>
     <File Include="bin/App.Service.WCFApp.pdb">
-      <publishTime>04/23/2019 22:11:25</publishTime>
+      <publishTime>05/02/2019 21:38:35</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.dll">
-      <publishTime>04/23/2019 22:11:24</publishTime>
+      <publishTime>05/02/2019 21:38:34</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.dll.config">
       <publishTime>03/07/2019 21:08:25</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.Interfaces.dll">
-      <publishTime>04/23/2019 21:40:07</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.Interfaces.pdb">
-      <publishTime>04/23/2019 21:40:07</publishTime>
+      <publishTime>05/02/2019 21:38:33</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.pdb">
-      <publishTime>04/23/2019 22:11:24</publishTime>
+      <publishTime>05/02/2019 21:38:34</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/07/2018 11:03:48</publishTime>
@@ -85,7 +85,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>04/23/2019 21:28:45</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/23/2019 21:38:53</publishTime>
+      <publishTime>05/02/2019 21:38:36</publishTime>
     </File>
   </ItemGroup>
 </Project>

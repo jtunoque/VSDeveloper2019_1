@@ -396,3 +396,11 @@ line-height: 1.428571429;
 .login-fondo {
     background-color: #550d0d;
 }
+
+.label-fechas{
+    font-size:16px;
+}
+
+.row {
+    margin-bottom: 8px;
+}
