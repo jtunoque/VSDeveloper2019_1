@@ -60,6 +60,12 @@
   <wsdl:message name="IMantenimientosServices_GetArtist_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetArtistResponse" />
   </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_SaveInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IMantenimientosServices_SaveInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInvoiceResponse" />
+  </wsdl:message>
   <wsdl:portType name="IMantenimientosServices">
     <wsdl:operation name="GetCustomers">
       <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/GetCustomers" message="tns:IMantenimientosServices_GetCustomers_InputMessage" />
@@ -76,6 +82,10 @@
     <wsdl:operation name="GetArtist">
       <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtist" message="tns:IMantenimientosServices_GetArtist_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/GetArtistResponse" message="tns:IMantenimientosServices_GetArtist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMantenimientosServices/SaveInvoice" message="tns:IMantenimientosServices_SaveInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMantenimientosServices/SaveInvoiceResponse" message="tns:IMantenimientosServices_SaveInvoice_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IMantenimientosServices" type="tns:IMantenimientosServices">
@@ -117,6 +127,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="SaveInvoice">
+      <soap12:operation soapAction="http://tempuri.org/IMantenimientosServices/SaveInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="BasicHttpBinding_IMantenimientosServices" type="tns:IMantenimientosServices">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -149,6 +168,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetArtist">
       <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/GetArtist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoice">
+      <soap:operation soapAction="http://tempuri.org/IMantenimientosServices/SaveInvoice" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

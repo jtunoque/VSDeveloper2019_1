@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using App.Entities.Base;
 using App.Entities.Queries;
 using App.UI.MVC.MantenimientosServices;
 using App.UI.MVC.ReportesServices;
@@ -44,9 +45,18 @@ namespace App.UI.MVC.Controllers
             var customers = mantenimientosServicesClient.GetCustomers("");
             ViewBag.customers = customers;
 
-            var tracks = reporteServicesClient.GetTrackAll("");
+            var tracks = reporteServicesClient.GetTrackAll("%");
             ViewBag.tracks = tracks;
 
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult GrabarVenta(Invoice venta)
+        {
+            venta.InvoiceDate = DateTime.Now;
+            var result = mantenimientosServicesClient.SaveInvoice(venta);
 
             return View();
         }

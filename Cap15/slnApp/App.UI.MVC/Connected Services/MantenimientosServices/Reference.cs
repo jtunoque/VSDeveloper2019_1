@@ -38,6 +38,12 @@ namespace App.UI.MVC.MantenimientosServices {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/GetArtist", ReplyAction="http://tempuri.org/IMantenimientosServices/GetArtistResponse")]
         System.Threading.Tasks.Task<App.Entities.Base.Artist> GetArtistAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/SaveInvoice", ReplyAction="http://tempuri.org/IMantenimientosServices/SaveInvoiceResponse")]
+        bool SaveInvoice(App.Entities.Base.Invoice entity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMantenimientosServices/SaveInvoice", ReplyAction="http://tempuri.org/IMantenimientosServices/SaveInvoiceResponse")]
+        System.Threading.Tasks.Task<bool> SaveInvoiceAsync(App.Entities.Base.Invoice entity);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,14 @@ namespace App.UI.MVC.MantenimientosServices {
         
         public System.Threading.Tasks.Task<App.Entities.Base.Artist> GetArtistAsync(int id) {
             return base.Channel.GetArtistAsync(id);
+        }
+        
+        public bool SaveInvoice(App.Entities.Base.Invoice entity) {
+            return base.Channel.SaveInvoice(entity);
+        }
+        
+        public System.Threading.Tasks.Task<bool> SaveInvoiceAsync(App.Entities.Base.Invoice entity) {
+            return base.Channel.SaveInvoiceAsync(entity);
         }
     }
 }

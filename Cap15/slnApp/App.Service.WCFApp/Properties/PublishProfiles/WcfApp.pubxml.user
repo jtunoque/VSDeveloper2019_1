@@ -10,31 +10,31 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/App.DataAccess.Repository.dll">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.dll.config">
       <publishTime>02/28/2019 19:35:56</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.Interface.dll">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.Interface.pdb">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.DataAccess.Repository.pdb">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Domain.dll">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Domain.Interfaces.dll">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Domain.Interfaces.pdb">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Domain.pdb">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Entities.Base.dll">
       <publishTime>05/02/2019 21:38:32</publishTime>
@@ -49,25 +49,25 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>05/02/2019 21:38:32</publishTime>
     </File>
     <File Include="bin/App.Service.WCFApp.dll">
-      <publishTime>05/02/2019 21:38:35</publishTime>
+      <publishTime>05/07/2019 22:17:16</publishTime>
     </File>
     <File Include="bin/App.Service.WCFApp.pdb">
-      <publishTime>05/02/2019 21:38:35</publishTime>
+      <publishTime>05/07/2019 22:17:16</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.dll">
-      <publishTime>05/02/2019 21:38:34</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.dll.config">
       <publishTime>03/07/2019 21:08:25</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.Interfaces.dll">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.Interfaces.pdb">
-      <publishTime>05/02/2019 21:38:33</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/App.Services.WCF.pdb">
-      <publishTime>05/02/2019 21:38:34</publishTime>
+      <publishTime>05/07/2019 22:17:14</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/07/2018 11:03:48</publishTime>

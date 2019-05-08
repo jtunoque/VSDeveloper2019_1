@@ -31,6 +31,7 @@ namespace App.DataAccess.Repository
             this.TrackRepository = new TrackRepository(_context);
             this.UsuarioRepository = new UsuarioRepository(_context);
             this.CustomerRepository = new CustomerRepository(_context);
+            this.InvoiceRepository = new InvoiceRepository(_context);
         }
 
 
@@ -38,6 +39,7 @@ namespace App.DataAccess.Repository
         public ITrackRepository TrackRepository { get; set; }
         public IUsuarioRepository UsuarioRepository { get; set; }
         public ICustomerRepository CustomerRepository { get; set; }
+        public IInvoiceRepository InvoiceRepository { get; set; }
 
         public int Complete()
         {
