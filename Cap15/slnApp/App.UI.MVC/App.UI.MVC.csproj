@@ -197,6 +197,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\JSDemos\ControlAcceso.html" />
+    <Content Include="Content\JSDemos\DemoVueJS.html" />
     <Content Include="Content\JSDemos\JavaScript.html" />
     <Content Include="Content\JSDemos\Jquery.html" />
     <Content Include="Content\template\css\bootstrap.css" />
@@ -220,10 +221,13 @@
     <Content Include="Content\template\js\morris\morris-0.4.3.min.css" />
     <Content Include="Content\template\js\morris\morris.js" />
     <Content Include="Content\template\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\common\helpers.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Connected Services\MantenimientosServices\MantenimientosServices.wsdl" />
@@ -247,6 +251,8 @@
     <Content Include="Content\template\fonts\glyphicons-halflings-regulard41d.eot" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Views\Home\PruebaLayout.cshtml" />
     <None Include="Connected Services\ReportesServices\ReporteServices.wsdl" />
     <None Include="Connected Services\ReportesServices\ReportesServices.xsd">
@@ -271,6 +277,8 @@
     </None>
     <Content Include="Properties\DataSources\App.Entities.Base.Usuario.datasource" />
     <Content Include="Properties\DataSources\App.Entities.Base.Customer.datasource" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -307,6 +315,7 @@
     <Content Include="Views\Security\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutAll.cshtml" />
     <Content Include="Views\Track\VenderTrack.cshtml" />
+    <Content Include="Views\Track\VenderTrackVue.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

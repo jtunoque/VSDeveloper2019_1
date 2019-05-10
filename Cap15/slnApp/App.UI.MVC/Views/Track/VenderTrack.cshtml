@@ -249,9 +249,13 @@
                 },
                 function (response) {
 
-
+                    if (response) {
+                        app.helpers.showMessageOK("Se registró correctamente la venta");
+                    }
+                    else {
+                        app.helpers.showMessageError("No se pudo registrar la venta");
+                    }
                 }
-
             );
 
         }

@@ -1,0 +1,207 @@
+﻿
+@{
+    ViewBag.Title = "Realizar venta de tracks";
+}
+
+<div id="venta">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Información general de la venta</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="cliente" class="col-md-2 control-label">Cliente:</label>
+                        <div class="col-md-10">
+                            <select id="cliente" class="form-control" v-model="cliente"
+                                    placeholder="Seleccionar el cliente">
+                                <option>Seleccionar el cliente</option>
+                                @foreach (var customer in ViewBag.customers)
+                                {
+                                    <option value="@customer.CustomerId">@customer.FirstName @customer.LastName</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label class="col-md-2 control-label">Fecha:</label>
+                        <div class="col-md-10">
+                            <span class="label label-success label-fechas">02/05/2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-horizontal">
+                        <label for="direccion" class="col-md-2 control-label">Dirección:</label>
+                        <div class="col-md-10">
+                            <input type="text"
+                                   id="direccion" v-model="direccion" class="form-control"
+                                   placeholder="Ingresar dirección del cliente" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="ciudad" class="col-md-2 control-label">Ciudad:</label>
+                        <div class="col-md-10">
+                            <input type="text"
+                                   id="ciudad" class="form-control" v-model="ciudad"
+                                   placeholder="Ingresar la ciudad del cliente" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="estado" class="col-md-2 control-label">Estado:</label>
+                        <div class="col-md-10">
+                            <input type="text"
+                                   id="estado" v-model="estado" class="form-control"
+                                   placeholder="Ingresar el estado del cliente" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="pais" class="col-md-2 control-label">Pais:</label>
+                        <div class="col-md-10">
+                            <input type="text"
+                                   id="pais" v-model="pais" class="form-control"
+                                   placeholder="Ingresar el país del cliente" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="postal" class="col-md-2 control-label">Postal:</label>
+                        <div class="col-md-10">
+                            <input type="text"
+                                   id="postal" v-model="postal" class="form-control"
+                                   placeholder="Ingresar el código postal del cliente" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Detalle de la venta</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-horizontal">
+                        <label for="track" class="col-md-2 control-label">Track:</label>
+                        <div class="col-md-10">
+                            <select id="track" class="form-control"
+                                    placeholder="Seleccionar el track"
+                                    v-model="track"
+                                    >
+                                <option>Elegir</option>
+                                @foreach (var track in ViewBag.tracks)
+                                {
+                                    <option value="@track.TrackId">@track.TrackName</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="precio" class="col-md-3 control-label">Precio:</label>
+                        <div class="col-md-9">
+                            <input type="text"
+                                   id="precio" v-model="precio" class="form-control"
+                                   placeholder="Ingresar el precio" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-horizontal">
+                        <label for="cantidad" class="col-md-3 control-label">Cantidad:</label>
+                        <div class="col-md-9">
+                            <input type="text"
+                                   id="cantidad" v-model="cantidad" class="form-control"
+                                   placeholder="Ingresar la cantidad" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" v-on:click="agregar" class="btn btn-primary btn-agregar">Agregar track</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <tr>
+                            <th>Track</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Sub Total</th>
+                        </tr>
+                        <tr v-for="item in items">
+                            <td>{{item.trackName}}</td>
+                            <td>{{item.precio}}</td>
+                            <td>{{item.cantidad}}</td>
+                            <td>{{item.total}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <button class="btn btn-danger btn-guardar">Guardar</button>
+</div>
+
+@section scripts
+{
+    <script>
+        var registro = new Vue(
+            {
+                el: "#venta",
+                data: {
+                    cliente: "0",
+                    direccion: "",
+                    ciudad: "",
+                    estado: "",
+                    pais: "",
+                    postal: "",
+                    track: "",
+                    precio: 0,
+                    cantidad:0,
+                    items:[]
+                },
+                methods: {
+                    agregar: function () {
+                        this.items.push(
+                            {
+                                track: this.track,
+                                trackName: $("#track").find('option:selected').text(),
+                                precio: this.precio,
+                                cantidad: this.cantidad,
+                                total:this.precio*this.cantidad
+                            }
+                        );
+
+                    }
+                }
+
+            }
+        );
+
+    </script>
+    
+}
