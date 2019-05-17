@@ -163,7 +163,7 @@
     </div>
 
     <br />
-    <button class="btn btn-danger btn-guardar">Guardar</button>
+    <button class="btn btn-danger btn-guardar" v-on:click="guardar">Guardar</button>
 </div>
 
 @section scripts
@@ -196,6 +196,47 @@
                             }
                         );
 
+                    },
+                    guardar: function () {
+                        var ventaInfo = {
+                            CustomerId: this.cliente,
+                            BillingAddress: this.direccion,
+                            BillingCity: this.ciudad,
+                            BillingState: this.estado,
+                            BillingCountry: this.pais,
+                            BillingPostalCode: this.postal,
+                            InvoiceLine: []
+                        };
+
+                        var total = 0;
+                        for (var i = 0; i < this.items.length; i++) {
+                            var detalle = {
+                                TrackId: this.items[i].track,
+                                UnitPrice: this.items[i].precio,
+                                Quantity: this.items[i].cantidad
+                            };
+                            total += this.items[i].subTotal;
+
+                            ventaInfo.InvoiceLine.push(detalle);
+                        }
+
+                        ventaInfo.Total = total;
+
+                        //Invocando mediante AJAX
+                        $.post("/track/GrabarVenta",
+                            {
+                                venta: ventaInfo
+                            },
+                            function (response) {
+
+                                if (response) {
+                                    app.helpers.showMessageOK("Se registró correctamente la venta");
+                                }
+                                else {
+                                    app.helpers.showMessageError("No se pudo registrar la venta");
+                                }
+                            }
+                        );
                     }
                 }
 

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<App.Entities.Base.Artist>
+
+@{
+    ViewBag.Title = "Administración de Artistas";
+    ViewBag.ViewDescription = "Página que permita la gestión de la" +
+                " información de artistas";
+}   
+@using (Ajax.BeginForm("Buscar",
+        new AjaxOptions
+        {
+            HttpMethod = "POST",
+            UpdateTargetId = "resultadoId",
+            InsertionMode = InsertionMode.Replace,
+            LoadingElementId= "imgLoader"
+        }
+    ))
+{
+    <input class="form-control" name="filtroByNombre" placeholder="Búsqueda por nombre de artista" />
+    <br />
+    <button type="submit" class="btn btn-success">Buscar</button>
+
+    <a href="@Url.Action("Create")" class="btn btn-primary">Nuevo artista</a>
+    <br />
+}
+<br />
+<div id="resultadoId"></div>
+
